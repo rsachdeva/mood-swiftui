@@ -11,6 +11,7 @@
 		2833352C254F8C81001002AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2833352B254F8C81001002AF /* ContentView.swift */; };
 		2833352E254F8C82001002AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2833352D254F8C82001002AF /* Assets.xcassets */; };
 		28333531254F8C82001002AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28333530254F8C82001002AF /* Preview Assets.xcassets */; };
+		2833353A254FB882001002AF /* SwiftyMoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28333539254FB882001002AF /* SwiftyMoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2833352D254F8C82001002AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28333530254F8C82001002AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28333532254F8C82001002AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28333539254FB882001002AF /* SwiftyMoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				2833352D254F8C82001002AF /* Assets.xcassets */,
 				28333532254F8C82001002AF /* Info.plist */,
 				2833352F254F8C82001002AF /* Preview Content */,
+				28333539254FB882001002AF /* SwiftyMoji.swift */,
 			);
 			path = Mood;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				2833352C254F8C81001002AF /* ContentView.swift in Sources */,
 				2833352A254F8C81001002AF /* MoodApp.swift in Sources */,
+				2833353A254FB882001002AF /* SwiftyMoji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

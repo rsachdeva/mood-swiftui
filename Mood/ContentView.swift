@@ -59,6 +59,7 @@ extension ContentView: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Rating: \(Int(rating))")
+            SwiftyMoji(value: rating)
             Slider(value: $rating,
                    in: 0...100)
         }.onAppear {
