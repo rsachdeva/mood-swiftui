@@ -35,7 +35,10 @@ extension SwiftyMoji {
 
 extension SwiftyMoji: View {
     var body: some View {
-        Circle().foregroundColor(color)
+        ZStack {
+            Circle().foregroundColor(color)
+            Eyes()
+        }
     }
 }
 
