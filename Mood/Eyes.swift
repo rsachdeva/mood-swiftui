@@ -21,17 +21,30 @@
 //
 //Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
 
+//“  .scaleEffect(x: 0.5,
+//                 y: 0.5,
+//                 anchor: .leading)”
+//
+//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
+
 import SwiftUI
 
 struct Eyes: View {
     var body: some View {
         HStack {
             Circle()
+                .scale(0.33)
             Spacer()
             Circle()
+                .scale(0.33)
         }
         .foregroundColor(.black)
-        .background(Color.red.opacity(0.3))
+//        .background(Color.red.opacity(0.3))
+        .scaleEffect(x: 0.5,
+                     y: 0.5,
+                     anchor: .center)
+        .offset(x: -50,
+                y: -50)
     }
 }
 
