@@ -56,6 +56,9 @@ extension SwiftyMoji {
     private func minDimension(for proxy: GeometryProxy) -> CGFloat {
 //        proxy.size
         let size = proxy.frame(in: .local).size
+        // returns lesser of the 2 values
+        print("size is \(size)")
+        print("min(size.width, size.height) is \(min(size.width, size.height))")
         return min(size.width, size.height)
     }
 }
@@ -65,6 +68,7 @@ extension SwiftyMoji: View {
     var body: some View {
         GeometryReader { proxy in
             let diameter = minDimension(for: proxy)
+//            print("diameter is \(diameter)")
             ZStack {
                 Circle()
                     .foregroundColor(color)

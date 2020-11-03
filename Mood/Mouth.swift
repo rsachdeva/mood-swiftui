@@ -53,11 +53,27 @@
 //
 //Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
 
+//“path
+//      .stroke(lineWidth: lineWidth)
+//      .frame(width: width,
+//             height: height,
+//             alignment: .center)
+//      .offset(x: 0,
+//              y: height/2)
+//      .foregroundColor(.black)”
+//
+//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
+//“path.addCurve(to: endingPoint,
+//                  control1: leftControlPoint,
+//                  control2: rightControlPoint)”
+//
+//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
 
 import SwiftUI
 
 struct Mouth {
     let size: CGFloat
+    // this is the rating passed from ContentView -> SwiftyMoji
     let value: Double
 }
 
@@ -65,12 +81,15 @@ struct Mouth {
 extension Mouth {
     var width: CGFloat {
         // width of mouth is 3/4 the size of diameter of the circle
-        size * 3 / 4
+        print("diameter here size is \(size)")
+        print("size * 3 / 4 is \(size * 3 / 4)")
+        return size * 3 / 4
     }
     
     var height: CGFloat {
         // height of mouth is 1/4 the size of diameter of the circle
-        size / 4
+        print("for height size / 4 is \(size / 4)")
+        return size / 4
     }
     
     var lineWidth: CGFloat {
@@ -81,7 +100,7 @@ extension Mouth {
         // using height compouted property
         // starts at 0, height/2 which is itself size / 4
         CGPoint(x: 0,
-                y: height / 2)
+                y: 50 * (height / 100))
     }
     
     var endingPoint: CGPoint {
@@ -89,7 +108,7 @@ extension Mouth {
         print("height is \(height)")
         print("height/2 is \(height / 2)")
         return CGPoint(x: width,
-                       y: height / 2)
+                       y: 50 * (height / 100))
     }
     
     var centerPoint: CGPoint {
@@ -104,33 +123,52 @@ extension Mouth {
                        y: CGFloat(value) * (height / 100))
     }
     
+    var yForControlPoints: CGFloat {
+        // can fo from 0 to 100
+        print("CGFloat(value) * (height / 100) is \(CGFloat(value) * (height / 100))")
+        //same formular used for startingPoint and endingPoint at 50 * (height / 100)
+        // so at 50 everything will be same
+        return CGFloat(value) * (height / 100)
+    }
+    
+    var leftControlPoint: CGPoint {
+        CGPoint(x: width / 4,
+                y: yForControlPoints)
+    }
+    
+    var rightControlPoint: CGPoint {
+        CGPoint(x: 3 * width / 4,
+                y: yForControlPoints)
+    }
 }
 
 
+//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
+//“path.addCurve(to: endingPoint,
+//                  control1: leftControlPoint,
+//                  control2: rightControlPoint)”
+//
+//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
 extension Mouth {
     var path: Path {
         var path = Path()
         path.move(to: startingPoint)
-        path.addLine(to: centerPoint)
-        path.addLine(to: endingPoint)
+        //        path.addLine(to: centerPoint)
+        //        path.addLine(to: endingPoint)
+        // starting Point is at 0; endingPoint is at width while control1 is at width/4 and control2 is width*3/4
+        // the y for the controlpoint is that dependent on the value using percentage as height
+        path.addCurve(to: endingPoint,
+                      control1: leftControlPoint,
+                      control2: rightControlPoint)
         return path
     }
 }
 
-//“path
-//      .stroke(lineWidth: lineWidth)
-//      .frame(width: width,
-//             height: height,
-//             alignment: .center)
-//      .offset(x: 0,
-//              y: height/2)
-//      .foregroundColor(.black)”
-//
-//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
+
 extension Mouth: View {
     var body: some View {
-//        Text("jmd")
-//            .position(x: 0, y: 0)
+        //        Text("jmd")
+        //            .position(x: 0, y: 0)
         path
             .stroke(lineWidth: lineWidth)
             .frame(width: width,
@@ -139,7 +177,7 @@ extension Mouth: View {
             .offset(x: 0,
                     y: height / 2)
             .foregroundColor(.black)
-            
+        
     }
 }
 
