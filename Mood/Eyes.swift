@@ -60,10 +60,10 @@ extension Eyes: View {
         .frame(width: size * 3 / 4,
                height: size / 12,
                alignment: .center)
-        .background(Color.red.opacity(0.3))
+//        .background(Color.red.opacity(0.3))
         .offset(x: 0,
                 y: -size / 8)
-        .background(Color.green.opacity(0.3))
+//        .background(Color.green.opacity(0.3))
     }
 }
 

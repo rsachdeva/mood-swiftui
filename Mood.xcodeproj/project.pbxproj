@@ -13,6 +13,7 @@
 		28333531254F8C82001002AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28333530254F8C82001002AF /* Preview Assets.xcassets */; };
 		2833353A254FB882001002AF /* SwiftyMoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28333539254FB882001002AF /* SwiftyMoji.swift */; };
 		2833353D255070E2001002AF /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2833353C255070E2001002AF /* Eyes.swift */; };
+		283335412551B7A8001002AF /* Mouth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283335402551B7A8001002AF /* Mouth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		28333532254F8C82001002AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28333539254FB882001002AF /* SwiftyMoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMoji.swift; sourceTree = "<group>"; };
 		2833353C255070E2001002AF /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
+		283335402551B7A8001002AF /* Mouth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2833352F254F8C82001002AF /* Preview Content */,
 				28333539254FB882001002AF /* SwiftyMoji.swift */,
 				2833353C255070E2001002AF /* Eyes.swift */,
+				283335402551B7A8001002AF /* Mouth.swift */,
 			);
 			path = Mood;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				2833352A254F8C81001002AF /* MoodApp.swift in Sources */,
 				2833353A254FB882001002AF /* SwiftyMoji.swift in Sources */,
 				2833353D255070E2001002AF /* Eyes.swift in Sources */,
+				283335412551B7A8001002AF /* Mouth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

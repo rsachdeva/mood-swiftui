@@ -54,6 +54,7 @@ extension SwiftyMoji {
 
 extension SwiftyMoji {
     private func minDimension(for proxy: GeometryProxy) -> CGFloat {
+//        proxy.size
         let size = proxy.frame(in: .local).size
         return min(size.width, size.height)
     }
@@ -68,6 +69,8 @@ extension SwiftyMoji: View {
                 Circle()
                     .foregroundColor(color)
                 Eyes(size: diameter)
+                Mouth(size: diameter,
+                      value: value)
             }
         }
     }
