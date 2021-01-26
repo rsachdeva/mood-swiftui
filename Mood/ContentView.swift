@@ -4,47 +4,7 @@
 //
 //  Created by Rohit Sachdeva on 11/1/20.
 //
-//
-//“struct ContentView {
-//  @State private var rating = 50.0
-//}”
-//
-//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
 
-//extension ContentView: View {
-//  var body: some View {
-//    VStack(spacing: 20) {
-//      Text("Rating: \(Int(rating))")
-//      Slider(value: $rating,
-//             in: 0...100)
-//
-//    }
-//    .padding()
-//  }
-//}
-
-//“@AppStorage("moodRating") private var moodRating = 50.0”
-//
-//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
-
-//“.onAppear {
-//      rating = moodRating
-//    }
-//    .padding()”
-//
-//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
-
-//“.onChange(of: scenePhase){ phase in
-//      if phase == .background {
-//        moodRating = rating
-//      }
-//    }”
-//
-//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
-
-//“@Environment(\.scenePhase) private var scenePhase”
-//
-//Excerpt From: Daniel H Steinberg. “A SwiftUI Kickstart.” Apple Books.
 
 import SwiftUI
 

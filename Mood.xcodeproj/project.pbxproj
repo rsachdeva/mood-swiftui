@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		282766AE25C0A51A00917398 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		28333526254F8C81001002AF /* Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28333529254F8C81001002AF /* MoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodApp.swift; sourceTree = "<group>"; };
 		2833352B254F8C81001002AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		2833351D254F8C81001002AF = {
 			isa = PBXGroup;
 			children = (
+				282766AE25C0A51A00917398 /* README.md */,
 				28333528254F8C81001002AF /* Mood */,
 				28333527254F8C81001002AF /* Products */,
 			);
