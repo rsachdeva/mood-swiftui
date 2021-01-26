@@ -17,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		282766AE25C0A51A00917398 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		282766AE25C0A51A00917398 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		282766AF25C0A81300917398 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		282766B025C0A8AB00917398 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		282766B325C0A96000917398 /* GoodMood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoodMood.png; sourceTree = "<group>"; };
 		28333526254F8C81001002AF /* Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28333529254F8C81001002AF /* MoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodApp.swift; sourceTree = "<group>"; };
 		2833352B254F8C81001002AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		2833351D254F8C81001002AF = {
 			isa = PBXGroup;
 			children = (
+				282766B325C0A96000917398 /* GoodMood.png */,
 				282766B025C0A8AB00917398 /* LICENSE */,
 				282766AF25C0A81300917398 /* .gitignore */,
 				282766AE25C0A51A00917398 /* README.md */,
